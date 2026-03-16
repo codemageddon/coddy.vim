@@ -18,7 +18,7 @@ do
         },
         diagnostics = {
           enable = true,
-          globals = { "vim" },
+          globals = { "vim", "Snacks" },
         },
       },
     },
