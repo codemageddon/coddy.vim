@@ -14,6 +14,10 @@
       "src": "https://github.com/catppuccin/nvim",
       "version": "1.11.0 - 2.0.0"
     },
+    "codereview.nvim": {
+      "rev": "24a251813e753d96e372c9bcf405ae5dc3c04790",
+      "src": "https://github.com/afewyards/codereview.nvim"
+    },
     "conform.nvim": {
       "rev": "086a40dc7ed8242c03be9f47fbcee68699cc2395",
       "src": "https://github.com/stevearc/conform.nvim"
