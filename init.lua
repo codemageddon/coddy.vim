@@ -18,6 +18,9 @@ vim.keymap.set("n", "<leader>cr", function()
   vim.lsp.buf.rename()
 end, { desc = "Rename Symbol" })
 vim.keymap.set("n", "<leader>ul", "<cmd>set list!<cr>", { desc = "Toggle List Chars" })
+vim.keymap.set({ "n", "t" }, "<C-/>", function()
+  vim.cmd("botright terminal")
+end, { desc = "Open Terminal" })
 
 vim.diagnostic.config({ virtual_text = true })
 
