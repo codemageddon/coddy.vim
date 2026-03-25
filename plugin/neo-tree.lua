@@ -16,6 +16,12 @@ require("neo-tree").setup({
     { event = events.FILE_MOVED, handler = on_move },
     { event = events.FILE_RENAMED, handler = on_move },
   },
+  window = {
+    mappings = {
+      ["h"] = "close_node",
+      ["l"] = "open",
+    },
+  },
 })
 
 vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<cr>", { desc = "Explorer" })
