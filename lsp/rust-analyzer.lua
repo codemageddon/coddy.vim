@@ -1,5 +1,5 @@
 return {
-  cmd = { "/opt/homebrew/bin/rust-analyzer" },
+  cmd = { "rust-analyzer" },
   root_markers = { "Cargo.toml" },
   settings = {
     ["rust-analyzer"] = {
