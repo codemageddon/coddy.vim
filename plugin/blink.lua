@@ -4,6 +4,7 @@ require("blink.cmp").setup({
   signature = { enabled = true },
   keymap = {
     preset = "default",
+    ["<CR>"] = { "accept", "fallback" },
   },
 
   appearance = {
@@ -12,6 +13,7 @@ require("blink.cmp").setup({
   },
 
   completion = {
+    list = { selection = { preselect = true, auto_insert = true } },
     documentation = {
       auto_show = true,
       auto_show_delay_ms = 200,

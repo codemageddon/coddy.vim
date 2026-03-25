@@ -21,8 +21,7 @@ require("snacks").setup({
     sections = {
       { section = "header", padding = 1 },
       { section = "keys", gap = 1, padding = 1 },
-      { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
-      { icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
+      { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1, limit = 20 },
       function()
         local ms = (vim.uv.hrtime() - vim.g.start_time) / 1e6
         local v = vim.version()
