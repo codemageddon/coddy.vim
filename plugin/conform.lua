@@ -40,6 +40,6 @@ require("conform").setup({
   },
 })
 
-vim.keymap.set("n", "<leader>sf", function()
+vim.keymap.set("n", "<leader>cf", function()
   require("conform").format({ lsp_fallback = true })
 end, { noremap = true, silent = true, desc = "Format" })
