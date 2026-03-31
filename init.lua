@@ -13,6 +13,11 @@ vim.opt.winborder = "rounded"
 vim.opt.clipboard = "unnamedplus"
 vim.env.PATH = vim.env.HOME .. "/.local/share/mise/shims:" .. vim.env.PATH
 
+vim.filetype.add({
+  pattern = {
+    ['%.gitlab%-ci%.ya?ml'] = 'yaml.gitlab',
+  },
+})
 
 vim.keymap.set("n", "<leader>cr", function()
   vim.lsp.buf.rename()
