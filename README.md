@@ -21,9 +21,12 @@ NVIM_APPNAME=nvim12 nvim
 ```
 init.lua              Global options, leader key, keymaps, autocommands
 stylua.toml           StyLua formatter config
+lsp/                  LSP server configurations (one file per server)
 plugin/
   00-catppuccin.lua   Colorscheme (loaded first)
+  blame.lua           Git blame
   blink.lua           Completion (LSP-only sources)
+  codereview.lua      Code review
   conform.lua         Formatting (stylua, ruff, gofumpt, rustfmt, etc.)
   fzf-lua.lua         Fuzzy finder
   lsp.lua             LSP server configs
@@ -45,6 +48,8 @@ Each plugin file is self-contained: package registration, setup, and keymaps liv
 | [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) | LSP configurations |
 | [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) | Syntax highlighting |
 | [blink.cmp](https://github.com/saghen/blink.cmp) | Completion |
+| [blame.nvim](https://github.com/FabijanZulj/blame.nvim) | Git blame |
+| [codereview.nvim](https://github.com/afewyards/codereview.nvim) | Code review |
 | [conform.nvim](https://github.com/stevearc/conform.nvim) | Formatting |
 | [fzf-lua](https://github.com/ibhagwan/fzf-lua) | Fuzzy finder |
 | [snacks.nvim](https://github.com/folke/snacks.nvim) | Picker, lazygit, indent guides, dashboard |
@@ -58,12 +63,13 @@ Each plugin file is self-contained: package registration, setup, and keymaps liv
 All installed via mise (not mason):
 
 - **lua_ls** — Lua
-- **basedpyright** + **ruff** — Python
+- **ty** + **ruff** — Python
 - **gopls** — Go
 - **rust-analyzer** — Rust
 - **jsonls** — JSON
 - **cssls** — CSS
-- **jazz-lsp** — Jazz (custom)
+- **gitlab-ci-ls** — GitLab CI
+- **jazz-lsp** — Jazz
 - **tsp-server** — TypeSpec
 
 ## Key Bindings
@@ -75,12 +81,16 @@ Leader key: `Space`
 | `<leader>e` | Toggle file explorer |
 | `<leader><leader>` | Find files |
 | `<leader>/` | Live grep |
-| `<leader>sf` | Format buffer |
+| `<leader>cf` | Format buffer |
 | `<leader>cr` | Rename symbol |
 | `<leader>ul` | Toggle list chars |
+| `<C-/>` | Toggle terminal |
 | `<leader>gg` | Lazygit (git root) |
 | `<leader>gG` | Lazygit (cwd) |
+| `<leader>gb` | Git blame |
 | `<leader>fb` | Buffers |
+| `<leader>fB` | Buffers (all) |
+| `<leader>cmr` | Code review |
 | `<leader>xx` | Diagnostics |
 | `<leader>xX` | Buffer diagnostics |
 | `<leader>xs` | Symbols |
