@@ -12,4 +12,5 @@ vim.lsp.enable({
   "ruff",
   "jsonls",
   "cssls",
+  "clangd",
 })

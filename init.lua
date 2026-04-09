@@ -10,6 +10,9 @@ vim.opt.colorcolumn = "100"
 vim.opt.list = false
 vim.opt.listchars = { tab = "→ ", multispace = "·", eol = "󰌑" }
 vim.opt.winborder = "rounded"
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.breakindent = true
 vim.opt.clipboard = "unnamedplus"
 vim.env.PATH = vim.env.HOME .. "/.local/share/mise/shims:" .. vim.env.PATH
 

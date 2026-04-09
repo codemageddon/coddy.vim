@@ -68,6 +68,7 @@ All installed via mise (not mason):
 - **rust-analyzer** — Rust
 - **jsonls** — JSON
 - **cssls** — CSS
+- **clangd** — C/C++
 - **gitlab-ci-ls** — GitLab CI
 - **jazz-lsp** — Jazz
 - **tsp-server** — TypeSpec
