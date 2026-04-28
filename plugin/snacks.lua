@@ -11,8 +11,12 @@ require("snacks").setup({
   styles = {
     claude = {
       position = "right",
-	  border = true,
-	  width = 80,
+      border = true,
+      width = 80,
+    },
+    ralphex = {
+      position = "bottom",
+      border = true,
     },
   },
   dashboard = {
