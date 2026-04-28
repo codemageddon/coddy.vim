@@ -7,6 +7,14 @@ require("snacks").setup({
     indent = { enabled = false },
     scope = { enabled = true },
   },
+  terminal = {},
+  styles = {
+    claude = {
+      position = "right",
+	  border = true,
+	  width = 80,
+    },
+  },
   dashboard = {
     enabled = true,
     preset = {
