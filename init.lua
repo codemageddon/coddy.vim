@@ -18,7 +18,7 @@ vim.env.PATH = vim.env.HOME .. "/.local/share/mise/shims:" .. vim.env.PATH
 
 vim.filetype.add({
   pattern = {
-    ['%.gitlab%-ci%.ya?ml'] = 'yaml.gitlab',
+    ["%.gitlab%-ci%.ya?ml"] = "yaml.gitlab",
   },
 })
 
@@ -37,4 +37,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 vim.keymap.set("n", "<leader>xs", "<cmd>Trouble symbols toggle<cr>", { desc = "Symbols" })
 
-vim.keymap.set({"n","t"}, "<c-/>",function() Snacks.terminal.focus(nil, { }) end, { desc = "Terminal (cwd)" })
+vim.keymap.set({ "n", "t" }, "<c-/>", function()
+  Snacks.terminal.focus(nil, {})
+end, { desc = "Terminal (cwd)" })
