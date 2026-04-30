@@ -30,6 +30,7 @@ plugin/
   conform.lua         Formatting (stylua, ruff, gofumpt, rustfmt, etc.)
   fzf-lua.lua         Fuzzy finder
   lsp.lua             LSP server configs
+  lsp-file-operations.lua  LSP file rename/move/delete hooks for neo-tree
   lualine.lua         Statusline
   neo-tree.lua        File explorer
   snacks.lua          Picker, lazygit, indent, dashboard
@@ -55,6 +56,7 @@ Each plugin file is self-contained: package registration, setup, and keymaps liv
 | [fzf-lua](https://github.com/ibhagwan/fzf-lua) | Fuzzy finder |
 | [snacks.nvim](https://github.com/folke/snacks.nvim) | Picker, lazygit, indent guides, dashboard |
 | [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim) | File explorer |
+| [nvim-lsp-file-operations](https://github.com/antosha417/nvim-lsp-file-operations) | LSP-aware rename/move/delete in neo-tree |
 | [trouble.nvim](https://github.com/folke/trouble.nvim) | Diagnostics |
 | [which-key.nvim](https://github.com/folke/which-key.nvim) | Keybinding hints |
 | [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) | Statusline |
