@@ -36,6 +36,7 @@ plugin/
   treesitter.lua      Syntax highlighting
   trouble.lua         Diagnostics list
   which-key.lua       Keybinding hints
+  window-picker.lua   Window picker
 ```
 
 Each plugin file is self-contained: package registration, setup, and keymaps live together. Neovim auto-sources `plugin/` files alphabetically on startup.
@@ -57,6 +58,7 @@ Each plugin file is self-contained: package registration, setup, and keymaps liv
 | [trouble.nvim](https://github.com/folke/trouble.nvim) | Diagnostics |
 | [which-key.nvim](https://github.com/folke/which-key.nvim) | Keybinding hints |
 | [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) | Statusline |
+| [nvim-window-picker](https://github.com/s1n7ax/nvim-window-picker) | Window picker |
 
 ## LSP Servers
 
@@ -89,6 +91,7 @@ Leader key: `Space`
 | `<leader>gg` | Lazygit (git root) |
 | `<leader>gG` | Lazygit (cwd) |
 | `<leader>gb` | Git blame |
+| `<leader>wp` | Pick window |
 | `<leader>fb` | Buffers |
 | `<leader>fB` | Buffers (all) |
 | `<leader>cmr` | Code review |
